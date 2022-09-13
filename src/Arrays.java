@@ -12,7 +12,7 @@ public class Arrays {
         myList[8] = 99.993;
         myList[9] = 11123;
 //        System.out.println(myList[4]);
-        for (int i = 0; i < myList.length; i++){
+        for (int i = myList.length-1; i >= 0; i--){
             System.out.print(myList[i]+" ");
         }
         System.out.println();
