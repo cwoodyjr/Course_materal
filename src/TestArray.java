@@ -1,0 +1,19 @@
+public class TestArray {
+    public static void main(String[] args) {
+        double sum = 0;
+        double[] numbers = {1,3,4,5,2,8,9,5,12,8};
+        //for each loop, only works with arrays or array lists
+//        for (double i : numbers){
+//            sum = sum+i;
+//            System.out.print(sum+ " ");
+//        }
+        System.out.println();
+        System.out.println("Sum of Numbers = "+sum);
+        System.out.println("Average number = "+sum/numbers.length);
+//        for (int i = 0; i < numbers.length; i++ ){
+//            sum=sum+numbers[i];
+//        }
+        System.out.println(sum);
+    }
+
+}
