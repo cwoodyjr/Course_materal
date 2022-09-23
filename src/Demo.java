@@ -14,20 +14,38 @@ public class Demo {
         displayMenu();
 
         int answer = reader.nextInt();
-        if (answer==1){
-            c = sumMethod(inputtedNum1,inputtedNum2);
-            display(c);
 
-        } else if (answer==2) {
-            c = subtractMethod(inputtedNum1,inputtedNum2);
-            display(c);
-
-        } else if (answer==3) {
-            c = multiplyMethod(inputtedNum1,inputtedNum2);
-            display(c);
-        }else {
-            System.out.println("invalid option!");
+        // as a switch statement:
+        switch (answer) {
+            case 1 -> {
+                c = sumMethod(inputtedNum1, inputtedNum2);
+                display(c);
+            }
+            case 2 -> {
+                c = subtractMethod(inputtedNum1, inputtedNum2);
+                display(c);
+            }
+            case 3 -> {
+                c = multiplyMethod(inputtedNum1, inputtedNum2);
+                display(c);
+            }
+            default -> System.out.println("invalid option!");
         }
+        // as an if statement:
+//        if (answer==1){
+//            c = sumMethod(inputtedNum1,inputtedNum2);
+//            display(c);
+//
+//        } else if (answer==2) {
+//            c = subtractMethod(inputtedNum1,inputtedNum2);
+//            display(c);
+//
+//        } else if (answer==3) {
+//            c = multiplyMethod(inputtedNum1,inputtedNum2);
+//            display(c);
+//        }else {
+//            System.out.println("invalid option!");
+//        }
 
     }
     public static void displayMenu(){
